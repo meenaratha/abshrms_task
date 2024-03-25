@@ -247,12 +247,17 @@
     color: #ccc; /* Icon color */
     pointer-events: none; /* Makes the icon non-interactive */
 }
+.print-btn{
+    width: 10%;
+}
 @media only screen and  (max-width: 1400px) {
 .print-btn{
     opacity: 1 !important;
+    width: 100%;
 }
 .res-print-btn{
     opacity: 0;
+    display: none;
 }
 }
 
