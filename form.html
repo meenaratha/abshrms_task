@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>sidebar</title>
+     <!-- plugins:css -->
+     <!-- <link rel="stylesheet" href="assets/vendor/materialdesignicons.min.css"> -->
+     <!-- <link rel="stylesheet" href="assets/vendor/vendor.bundle.base.css"> -->
+     <link rel="stylesheet" href="assets/vendor/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <link rel="stylesheet" href="assets/css/custom.css">
+
+     <!-- endinject -->
+</head>
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+            <a class="sidebar-brand brand-logo" href=""><img src="assets/images/logo-light.png" alt="logo" /></a>
+            <a class="sidebar-brand brand-logo-mini" href=""><img src="assets/images/logo-mini.png" alt="logo" /></a>
+          </div>
+          <ul class="nav">
+          
+            <li class="nav-item nav-category">
+              <span class="nav-link" style="color: #000000;">Navigation</span>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="dashboard.html">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-grip"></i>
+                </span>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="form.html">
+                  <span class="menu-icon">
+                      <i class="fa-solid fa-list"></i>
+                  </span>
+                  <span class="menu-title">List</span>
+                </a>
+              </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-user-group" style="font-size: 20px !important;" ></i>
+                </span>
+                <span class="menu-title">User</span>
+                <!-- <i class="fa-solid fa-caret-down" style="margin-left: auto; "></i> -->
+              </a>
+              <!-- <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="">User list</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="">Admins</a></li>
+                </ul>
+              </div> -->
+            </li>
+           
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-cart-flatbed"></i>
+                </span>
+                <span class="menu-title">Cart</span>
+              </a>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-store"></i>
+                </span>
+                <span class="menu-title">Store</span>
+              </a>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </span>
+                <span class="menu-title">Stocks</span>
+              </a>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link " data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <span class="menu-icon">
+                    <i class="fa-regular fa-clipboard"></i>
+                </span>
+                <span class="menu-title">Stock List</span>
+                <i class="fa-solid fa-caret-down" style="margin-left: auto; "></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href=""> Blank Page </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item menu-items">
+              <a class="nav-link" href="">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-gear"></i>
+                </span>
+                <span class="menu-title">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+          <!-- partial:../../partials/_navbar.html -->
+          <nav class="navbar p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+              <a class="navbar-brand brand-logo-mini" href=""><img src="assets/images/logo-mini.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+              <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <ul class="navbar-nav w-100">
+                <li class="nav-item w-100">
+                  <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                    <div class="search-box">
+                        <i class="fa fa-search" id="searchIcon"></i>
+                        <input type="text"  id="searchInput" class="form-control search-box" placeholder="Search products..">    
+                    </div>
+                  </form>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-nav-right">
+                <!-- <li class="nav-item dropdown d-none d-lg-block">
+                  <a class="nav-link btn btn-success create-new-button absbtn" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+                    <h6 class="p-3 mb-0">Projects</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-file-outline text-primary"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-web text-info"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">UI Development</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                          <i class="mdi mdi-layers text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Software Testing</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all projects</p>
+                  </div>
+                </li> -->
+                    <!-- <li class="nav-item nav-settings d-none d-lg-block">
+                    <a class="nav-link" href="#">
+                        <i class="mdi mdi-view-grid"></i>
+                    </a>
+                    </li> -->
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="count bg-success"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                    <h6 class="p-3 mb-0">Messages</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="assets/images/face4.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                        <p class="text-muted mb-0"> 1 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="assets/images/face2.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                        <p class="text-muted mb-0"> 15 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="assets/images/face3.jpg" alt="image" class="rounded-circle profile-pic">
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                        <p class="text-muted mb-0"> 18 Minutes ago </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">4 new messages</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown border-left">
+                  <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="count bg-danger"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                    <h6 class="p-3 mb-0">Settings</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-solid fa-address-card"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Profile</p>
+                        <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Location</p>
+                        <p class="text-muted ellipsis mb-0"> Update Location </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Anti virus</p>
+                        <p class="text-muted ellipsis mb-0"> Anti virus! </p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">See all Settings</p>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link mt-md-0 d-none d-lg-flex" id="profileDropdown" href="#" data-toggle="dropdown">
+                      <div class="navbar-profile">
+                        <img class="img-xs " src="assets/images/logo-mini.png" alt="">
+                        <p class="mb-0 d-none d-sm-block navbar-profile-name">ABS erp</p> &nbsp;
+                        <i class="fa-solid fa-angle-down d-none d-sm-block"></i>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                      <h6 class="p-3 mb-0">Profile</h6>
+                      <!-- <div class="dropdown-divider"></div> -->
+                      <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                          <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-regular fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="preview-item-content">
+                          <p class="preview-subject mb-1">User list</p>
+                        </div>
+                      </a>
+                      <!-- <div class="dropdown-divider"></div> -->
+                      <!-- <a class="dropdown-item preview-item">
+                        <div class="preview-thumbnail">
+                          <div class="preview-icon bg-dark rounded-circle">
+                            <i class="mdi mdi-logout text-danger"></i>
+                          </div>
+                        </div>
+                        <div class="preview-item-content">
+                          <p class="preview-subject mb-1">Log out</p>
+                        </div>
+                      </a> -->
+                      <div class="dropdown-divider"></div>
+                      <p class="p-3 mb-0 text-center">More information</p>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                    <div class="navbar-profile">
+                      <img class="img-xs rounded-circle" src="assets/images/admin.jpg" alt="">
+                      <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                      <i class="fa-solid fa-angle-down d-none d-sm-block"></i>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                    <h6 class="p-3 mb-0">Profile</h6>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Settings</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <i class="fa-solid fa-unlock"></i>
+
+                        </div>
+                      </div>
+                      <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Log out</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <p class="p-3 mb-0 text-center">Advanced settings</p>
+                  </div>
+                </li>
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+          <!-- partial -->
+          <div class="main-panel">
+            <div class="content-wrapper">
+              <div class="page-header">
+                <h3 class="page-title"> Customer Creation </h3>
+                <!-- <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Form elements</li>
+                  </ol>
+                </nav> -->
+              </div>
+              <div class="row">
+                <div class="col-12">
+                    <section class="tab-section">
+                        <div class="tab-title title-flex-2">
+                             <ul class="form-tab">
+                                <li class="tab-list">
+                                   <button class="tab-button active">COMPANY DETAILS</button>
+                                </li>
+                                <li class="tab-list">
+                                    <button class="tab-button">BILLING & SHIPPING DETAILS</button>
+                                 </li>
+                                 <li class="tab-list">
+                                    <button class="tab-button">KYC DOCUMENTS</button>
+                                 </li>
+                                 <div class="line"></div>
+                             </ul>
+                        </div>
+                        <div class="tab-content-container">
+                            <div class="tab-content-box active">
+                                <div class="container">
+                                    <h4 class="card-title">Company Details</h4>
+                                      <form action="">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            
+                                          </div>
+                                          <h4 class="card-title">Address Details</h4>
+
+                                          <div class="row">
+                                            <div class="col-md-6 grid-margin stretch-card">
+                                                 <!-- Textarea that visually spans 3 rows -->
+                                               
+                                                    <textarea class="form-control" rows="5" placeholder="Enter text here..."></textarea>
+                                               
+                                            </div>
+                                            <div class="col-md-6 grid-margin stretch-card">
+                                              
+                                                <textarea class="form-control" rows="5" placeholder="Enter text here..."></textarea>
+                                
+                                            </div>
+                                          </div>  
+
+                                          <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            
+                                          </div>
+
+                                          <h4 class="card-title">Contact Person</h4>
+                                          <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="form-group">
+                                                    <label for="exampleInputUsername1">Username</label>
+                                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                                  </div>
+                                            </div>
+            
+                                            
+                                          </div>
+                                          <h4 class="card-title">Address Details</h4>
+
+                                          <div class="row">
+                                            <div class="col-md-4">
+                                              <!-- Column 1 Content -->
+                                              <div class="form-group">
+                                              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <!-- Column 2 Content -->
+                                              <div class="form-group">
+                                              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                            </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                              <!-- Column 3 Content -->
+                                              <div class="form-group">
+                                              <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                               </div>
+                                            </div>
+                                          </div>
+                                          <div class="row justify-content-center align-items-center form-btn-container">
+                                            <div class="col-sm-6 col-md-3 text-center" style=" display: flex;
+                                            justify-content: space-around;">
+                                              <button type="button" class="cancel-btn">Cancel</button>
+                                              <button type="button" class="save-btn" style="font-size: 14px;">Save & Continue</button>
+
+                                            </div>
+                                          </div>
+
+                                      </form>
+                                     
+                                  </div>
+                                  
+                            </div>
+                            <div class="tab-content-box">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="card-title" style="text-align: center;">Billing and Shipping details</h4>
+                                     
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="tab-content-box">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <h4 class="card-title" style="text-align: center;">KYC Documents</h4>
+                                     
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        
+
+                    </section>
+                </div>
+              </div>
+              
+             
+            </div>
+            <!-- content-wrapper ends -->
+           
+          </div>
+          <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+      </div>
+      <!-- container-scroller -->
+
+      <!-- plugins:js -->
+    <script src="assets/vendor/js/vendor.bundle.base.js"></script>
+    <!-- <script src="assets/js/off-canvas.js"></script> -->
+    <!-- <script src="assets/js/hoverable-collapse.js"></script>
+        <script src="assets/js/hoverable-collapse.js"></script> -->
+        <script src="assets/js/misc.js"></script>
+        <script src="assets/js/custom.js"></script>
+
+  <!-- Custom js for this page -->
+  <!-- <script src="assets/js/dashboard.js"></script> -->
+  <!-- End custom js for this page -->
+
+
+    <!-- endinject -->
+</body>
+</html>

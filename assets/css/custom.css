@@ -1,0 +1,294 @@
+.search-box {
+    position: relative;
+    width: 200px;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    z-index: 1;
+    cursor: pointer;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile {
+    background: #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.absbtn{
+    background-color: #ffff;
+    padding: 10px 8px !important;
+    border: 2px solid rgb(146, 144, 144);
+    border-radius: 5px;
+}
+.absbtn:hover{
+    background-color: #ffff;
+    border: 2px solid rgb(146, 144, 144);
+
+}
+.title-flex-2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.form-tab{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: calc(8px +(20 - 8)*((100vw - 320px) /(1920 - 320)));
+    border: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgb(234, 232, 232);
+    width: 100%;
+    position: relative;
+}
+.form-tab::-webkit-scrollbar{
+    height: 3px;
+    border-radius: 10px !important;
+    box-shadow: inset 0 0 5px grey;
+
+      display: none;
+  }
+  /* This styles the scrollbar track */
+  .form-tab::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+  border-radius: 10px !important;
+  max-width: 20%;
+  }
+   /* This styles the scrollbar thumb (the part that you drag) */
+   .form-tab::-webkit-scrollbar-thumb {
+    background: orange;
+    height:10px !important;
+    width:3px !important;
+    border-radius: 10px;
+    max-width: 20%;
+  }
+
+  /* This styles the scrollbar thumb on hover */
+  .form-tab::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 123, 0);
+  }
+
+.tab-list {
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    padding: 0px 10px;
+}
+.tab-button{
+    border: none;
+    background: #ffff;
+    text-wrap: nowrap;
+}
+.tab-list .active{
+   color: blue;
+}
+.line{
+    position: absolute;
+    top:40px;
+    left: 65px;
+    width: 90px;
+    height: 4px;
+    background-color: rgb(255, 123, 0);
+   /* z-index: 9999; */
+   transition: all .3s ease-in-out;
+}
+.tab-content-box{
+    display: none;
+    animation: moving  .5s ease;
+}
+@keyframes moving{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.tab-content-container  .tab-content-box.active{
+   display: block;
+}
+.form-btn-container{
+    margin-top: 50px;
+    margin-bottom: 30px;
+   
+}
+.cancel-btn{
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 2px solid #000;
+    background-color: #ffff;
+    transition: all .3s ease-in-out;
+    height: 45px;
+    
+    text-wrap: nowrap;
+
+}
+.cancel-btn:hover{
+    background-color: #000;
+    color: #ffff;
+    
+}
+.save-btn{
+    margin: 0px 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #000;
+    color: #ffff;
+    transition: all .3s ease-in-out;
+    height: 45px;
+    /* font-size: 14px; */
+    /* width: 100%; */
+    text-wrap: nowrap;
+
+
+
+}
+@media screen and(max-width:786px) {
+    .save-btn{
+        margin: 0px 70px;
+
+    }
+
+}
+.save-btn:hover{
+    background-color: rgb(72, 71, 71);
+    border: rgb(21, 21, 21);
+
+}
+.card-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-content .icon{
+    background: #f6f6f6;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 7px;
+}
+.p-content {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+    text-wrap: nowrap;
+
+}
+.res-card{
+    background: #fff;
+}
+@media only screen and (max-width: 700px){
+.res-col{
+    max-width: 100% !important;
+}
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+  }
+  
+  .flex-item {
+    flex: 0 0 20%; /* Do not grow, do not shrink, start at 20% of the parent container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 10px; /* Adjust as needed */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .flex-item {
+      flex: 0 0 50%; /* Adjust to 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flex-item {
+      flex: 0 0 100%; /* Stack vertically on very small screens */
+    }
+  }
+
+  
+  .search-box {
+    position: relative;
+    width: 100%; /* Or any other width */
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded borders */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; /* Icon color */
+    pointer-events: none; /* Makes the icon non-interactive */
+}
+@media only screen and  (max-width: 1400px) {
+.print-btn{
+    opacity: 1 !important;
+}
+.res-print-btn{
+    opacity: 0;
+}
+}
+
+
+.res-table{
+    overflow-x: auto;
+    border-radius: 10%;
+    border: 2px solid #f2f2f2;
+}
+.res-table::-webkit-scrollbar{
+    height: 3px;
+    border-radius: 10px !important;
+    box-shadow: inset 0 0 5px grey;
+
+      display: none;
+  }
+  /* This styles the scrollbar track */
+  .res-table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+  border-radius: 10px !important;
+  max-width: 20%;
+  }
+   /* This styles the scrollbar thumb (the part that you drag) */
+   .res-table::-webkit-scrollbar-thumb {
+    background: orange;
+    height:10px !important;
+    width:3px !important;
+    border-radius: 10px;
+    max-width: 20%;
+  }
+
+  /* This styles the scrollbar thumb on hover */
+  .res-table::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 123, 0);
+  }
+  .res-table th{
+    color: #000000 !important;
+  }
