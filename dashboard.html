@@ -78,7 +78,7 @@
             <li class="nav-item menu-items">
               <a class="nav-link" href="">
                 <span class="menu-icon">
-                    <i class="fa-solid fa-cubes-stacked"></i>
+                  <i class="fa-solid fa-sitemap"></i>
                 </span>
                 <span class="menu-title">Stocks</span>
               </a>
@@ -121,7 +121,7 @@
               <ul class="navbar-nav w-100">
                 <li class="nav-item w-100">
                   <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                    <div class="search-box">
+                    <div class="search-box" style="width: 230px !important;">
                         <i class="fa fa-search" id="searchIcon"></i>
                         <input type="text"  id="searchInput" class="form-control search-box" placeholder="Search products..">    
                     </div>
@@ -266,7 +266,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link mt-md-0 d-none d-lg-flex" id="profileDropdown" href="#" data-toggle="dropdown">
                       <div class="navbar-profile">
-                        <img class="img-xs " src="assets/images/logo-mini.png" alt="">
+                        <img class="img-xs " src="assets/images/logo-mini.png" alt="" style="padding: 10px;padding-right: 5px;">
                         <p class="mb-0 d-none d-sm-block navbar-profile-name">ABS erp</p> &nbsp;
                         <i class="fa-solid fa-angle-down d-none d-sm-block"></i>
                       </div>
@@ -355,7 +355,7 @@
                 </nav> -->
               </div>
               <div class="row">
-                <div class="card" style="background: #f2f2f2;">
+                <div class="card" style="background: #f2f2f2; width: 100%; padding: 10px ;">
                     <div class="col-12">
                         <div class="row gx-2 " style="align-items: center; text-align: center;">
                             <div class="col-12 col-sm-6 col-md-4 col-lg-2 m-2 res-col" style="max-width: 33.33%;">
@@ -434,32 +434,35 @@
               <div class="flex-container">
                 <div class="flex-item">
                     <div class="search-box">
-                        <input type="text" class="search-input" placeholder="Search...">
-                        <i class="fas fa-search search-icon"></i>
+                      <i class="fas fa-search search-icon"></i>
+
+                        <input type="text" class="search-input" placeholder="Search..">
                     </div>
                     
                 </div>
                 <div class="flex-item">
-                    <button type="button" class="cancel-btn"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add New Customer</button>
+                    <a href="form.html"><button type="button" class="cancel-btn" style="font-weight: 500;">
+                      <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add New Customer</button></a>
 
                 </div>
                 <div class="flex-item">
-                    <button type="button" class="save-btn"><i class="fa-solid fa-upload"></i>&nbsp;&nbsp;Import Customer</button>
+                    <button type="button" class="save-btn" style="font-weight: 500;">
+                      <i class="fa-solid fa-upload"></i>&nbsp;&nbsp;Import Customer</button>
 
                 </div>
                 <div class="flex-item print-btn" style="opacity: 0;">
                     <div class="inline-btn" style="display: flex;justify-content: space-around;">
-                        <button type="button" class="cancel-btn">
+                        <button type="button" class="cancel-btn" style="font-weight: 500;">
                             <i class="fa-solid fa-print"></i> &nbsp;
                             Print</button>
-                        <button type="button" class="cancel-btn" style="margin-left: 20px;">
+                        <button type="button" class="cancel-btn" style="margin-left: 20px;" style="font-weight: 500 !important;">
                             <i class="fa-solid fa-download"></i>&nbsp;Download</button>
 
                     </div></div>
                 <div class="flex-item res-print-btn">
                     <div class="inline-btn" style="display: flex;justify-content: space-around;">
-                        <button type="button" class="cancel-btn">&nbsp;Print</button>
-                        <button type="button" class="cancel-btn" style="margin-left: 20px;">&nbsp;Download</button>
+                        <button type="button" class="cancel-btn" style="font-weight: 500;" style="font-weight: 500 !important;"> <i class="fa-solid fa-download"></i>&nbsp;Print</button>
+                        <button type="button" class="cancel-btn" style="margin-left: 20px; font-weight: 500 !important;"> <i class="fa-solid fa-download"></i>&nbsp;Download</button>
 
                     </div>
                 </div>

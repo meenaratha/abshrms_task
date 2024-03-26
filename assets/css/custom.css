@@ -192,6 +192,7 @@
 }
 .res-card{
     background: #fff;
+    border-radius: 10px !important;
 }
 @media only screen and (max-width: 700px){
 .res-col{
@@ -204,6 +205,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0px;
+    max-width: 1200px;
   }
   
   .flex-item {
