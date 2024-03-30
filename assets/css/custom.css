@@ -299,3 +299,36 @@
   .res-table th{
     color: #000000 !important;
   }
+
+  /* form style*/
+
+  p.star {
+    position: absolute;
+    color: #000000;
+    /*right: 10px; /* Adjust based on the padding inside your input field */
+    left: 15px;
+    top: 10px;
+    margin: 0;
+    pointer-events: none; /* Makes the asterisk non-interactive */
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+p.star:hover{
+    opacity: 0.5;
+} 
+
+.applynowemail.contactemail {
+    position: relative;
+    display: inline-block; /* Ensures the container fits the input width */
+}
+
+.applynowemail.contactemail input {
+    padding-right: 20px; /* Ensure there's space for the asterisk */
+}
+
+    
+  .form-control::after{
+         content: '*';
+         color: red;
+         font-size: 24px;
+  }

@@ -16963,6 +16963,9 @@ code {
     font-size: 14px;
      font-weight: 400;
   }
+  .form-control::placeholder::first-letter{
+    color: red;
+  }
 
 .navbar .form-control, .navbar .asColorPicker-input, .navbar .dataTables_wrapper select, .dataTables_wrapper .navbar select, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input[type=text],
 .navbar .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .navbar select, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input[type=number], .navbar .select2-container--default .select2-selection--single, .select2-container--default .navbar .select2-selection--single, .navbar .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .navbar .select2-search__field, .navbar .typeahead,
