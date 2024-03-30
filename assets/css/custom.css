@@ -300,6 +300,27 @@
     color: #000000 !important;
   }
 
+
+  /* This part changes the scrollbar container */
+  .res-table::-webkit-scrollbar {
+    width: 6px; /* Adjust the width of the scrollbar */
+  }
+  
+  /* This part changes the background of the scrollbar track */
+  .res-table::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Change to your preferred track color */
+  }
+  
+  /* This part changes the scrollbar handle */
+  .res-table::-webkit-scrollbar-thumb {
+    background: #888; /* Change to your preferred thumb color */
+  }
+  
+  /* Handle on hover */
+  .res-table ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change to your preferred hover effect color */
+  }
+  
   /* form style*/
 
   p.star {
@@ -332,3 +353,56 @@ p.star:hover{
          color: red;
          font-size: 24px;
   }
+
+  /* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  /* Create a custom checkbox appearance */
+  .custom-checkbox .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* On mouse-over, add a slightly darker grey background */
+  .custom-checkbox:hover input ~ .checkmark {
+    background-color: #fdee4f;
+  }
+  
+  /* When the checkbox is checked, change the background color and add a checkmark */
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: #e0c605;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
