@@ -70,7 +70,7 @@
   }
    /* This styles the scrollbar thumb (the part that you drag) */
    .form-tab::-webkit-scrollbar-thumb {
-    background: orange;
+    background: #F9BE00;
     height:10px !important;
     width:3px !important;
     border-radius: 10px;
@@ -79,7 +79,7 @@
 
   /* This styles the scrollbar thumb on hover */
   .form-tab::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 123, 0);
+    background: #d2a40d;
   }
 
 .tab-list {
@@ -92,9 +92,11 @@
     border: none;
     background: #ffff;
     text-wrap: nowrap;
+    color: #a29c9c;
 }
 .tab-list .active{
-   color: blue;
+   color: rgb(14, 14, 14);
+   font-weight: 500;
 }
 .line{
     position: absolute;
@@ -102,7 +104,7 @@
     left: 65px;
     width: 90px;
     height: 4px;
-    background-color: rgb(255, 123, 0);
+    background-color: #F9BE00;
    /* z-index: 9999; */
    transition: all .3s ease-in-out;
 }
@@ -317,7 +319,7 @@
   
   /* This part changes the scrollbar handle */
   .table-responsive::-webkit-scrollbar-thumb {
-    background: #f4c60d; /* Change to your preferred thumb color */
+    background: #F9BE00; /* Change to your preferred thumb color */
   }
   
   /* Handle on hover */
@@ -384,7 +386,7 @@ p.star:hover{
   
   /* When the checkbox is checked, change the background color and add a checkmark */
   .custom-checkbox input:checked ~ .checkmark {
-    background-color: #e0c605;
+    background-color: #F9BE00;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
