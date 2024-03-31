@@ -265,25 +265,28 @@
 
 
 .res-table{
-    overflow-x: auto;
     border-radius: 10%;
     border: 2px solid #f2f2f2;
 }
-.res-table::-webkit-scrollbar{
+.table-responsive{
+  overflow-x: auto;
+
+}
+/* .res-table::-webkit-scrollbar{
     height: 3px;
     border-radius: 10px !important;
     box-shadow: inset 0 0 5px grey;
 
       display: none;
   }
-  /* This styles the scrollbar track */
+  /* This styles the scrollbar track *
   .res-table::-webkit-scrollbar-track {
     background: #f1f1f1;
     box-shadow: inset 0 0 5px grey;
   border-radius: 10px !important;
   max-width: 20%;
   }
-   /* This styles the scrollbar thumb (the part that you drag) */
+   /* This styles the scrollbar thumb (the part that you drag) *
    .res-table::-webkit-scrollbar-thumb {
     background: orange;
     height:10px !important;
@@ -292,33 +295,34 @@
     max-width: 20%;
   }
 
-  /* This styles the scrollbar thumb on hover */
+  /* This styles the scrollbar thumb on hover *
   .res-table::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 123, 0);
-  }
+  } */
   .res-table th{
     color: #000000 !important;
   }
 
 
   /* This part changes the scrollbar container */
-  .res-table::-webkit-scrollbar {
-    width: 6px; /* Adjust the width of the scrollbar */
+  .table-responsive::-webkit-scrollbar {
+    width: 20%; /* Adjust the width of the scrollbar */
+    height: 4px;
   }
   
   /* This part changes the background of the scrollbar track */
-  .res-table::-webkit-scrollbar-track {
+  .table-responsive::-webkit-scrollbar-track {
     background: #f1f1f1; /* Change to your preferred track color */
   }
   
   /* This part changes the scrollbar handle */
-  .res-table::-webkit-scrollbar-thumb {
-    background: #888; /* Change to your preferred thumb color */
+  .table-responsive::-webkit-scrollbar-thumb {
+    background: #f4c60d; /* Change to your preferred thumb color */
   }
   
   /* Handle on hover */
-  .res-table ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Change to your preferred hover effect color */
+  .table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #e8dd0d; /* Change to your preferred hover effect color */
   }
   
   /* form style*/
